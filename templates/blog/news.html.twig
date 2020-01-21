@@ -1,0 +1,26 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+<section class="container">
+    <h1 class="mt-5">News page</h1>
+
+
+    <div class="row mt-5">
+        {% for article in articles %}
+        <article class="col-md-4 mt-4">
+            <img class="card-image" src="{{ article.imageurl }}" alt="">
+            <div class="card">
+                <h3 class="card-title mb-3">{{ article.title }}</h3>
+                <div class="d-flex justify-content-between align-items-center mt-1 mb-3">
+                    <span class="card-tag">#{{ article.tag }}</span>
+                    <span class="card-date">{{ article.created_at }}</span>
+                </div>
+                <p class="card-text">{{ article.content }}</p>
+                <a href="#" class="card-link">read more</a>
+            </div>
+        </article>
+        {% endfor %}
+    </div>
+
+</section>
+{% endblock %}

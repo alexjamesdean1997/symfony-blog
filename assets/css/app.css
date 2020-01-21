@@ -1,0 +1,61 @@
+body {
+  background-color: #fafafa;
+}
+
+h1 {
+  font-size: 2.7rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+p {
+  font-size: 0.9rem;
+}
+
+.card-image {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  max-height: 220px;
+  min-height: 220px;
+}
+
+.card {
+  border: 0;
+  -webkit-box-shadow: 0 0 16px #33333340;
+          box-shadow: 0 0 16px #33333340;
+  padding: 20px;
+}
+
+.card .card-tag {
+  padding: 3px 9px;
+  color: white;
+  background: darkblue;
+  border-radius: 7px;
+  font-size: 12px;
+  vertical-align: middle;
+}
+
+.card .card-date {
+  color: #999;
+  font-size: 0.8rem;
+  font-weight: 300;
+}
+
+.card .card-text {
+  font-weight: 300;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  visibility: visible;
+}
+/*# sourceMappingURL=app.css.map */

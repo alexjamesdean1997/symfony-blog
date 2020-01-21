@@ -1,0 +1,11 @@
+# config/packages/easy_admin.yaml
+easy_admin:
+    entities:
+        News:
+            class: App\Entity\News
+            form:
+                fields:
+                    - title
+                    - content
+                    - imageurl
+                    - tag
